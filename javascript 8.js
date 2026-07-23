@@ -365,4 +365,89 @@
 //  }
 
 
-                                            
+                        // Module-10-practice-tasks
+
+                        //  Beginner      
+              
+//1.1. Create an array with 3 items of your choice. Log it.
+// Expected: array with your 3 items printed
+
+// let array=[1,2,3];
+// console.log(array)
+
+//2.2. Log the length of the array from Task 1.
+// Expected: 3
+
+// let array=[3,5,8];
+// let a=array.length;
+// console.log(a)
+
+
+//3.. Log the item at index 0 and index 2 of the array.
+
+// let array=[4,9,7,5,3,1,6];
+// console.log(array[0])
+// console.log(array[2])
+
+//4. Change the item at index 1 to a new value. Log the array.
+
+// let array=[2,3,4,5,6,7,8];
+// array[1]=20;
+// console.log(array)
+
+//5. Add one item to the end of the array. Log the array.
+
+// let array=[2,4,6,7];
+// array.push(23)
+// console.log(array)
+
+//6. Remove the last item from the array. Log the array and the removed value.
+
+// let array=[23,43,656,78,90];
+// let removed=array.pop();
+// console.log(removed)
+// console.log(array)
+
+//7. Add one item to the start of the array. Log the array.
+
+// let array=[22,33,44,5,7];
+// let add=array.unshift(222)
+// console.log(array)
+// console.log(add)
+
+//8. Remove the first item from the array. Log the array and the removed value.
+
+// let array=[22,33,44,5,7];
+// let removed=array.shift(222)
+// console.log(array)
+// console.log(removed)
+
+//9. Check whether the array contains a specific value. Log true or false.
+
+// let array=[22,333,44,55,66];
+// if(array.includes(333)){
+//     console.log("true")
+// }else{
+//     console.log("false")
+// }
+
+//10. Find the position of a specific value in the array. Log the number.
+// let array=[22,33,44,5,7];
+// let indexnumber=array.indexOf(33);
+// console.log(indexnumber)
+
+//11. Loop through the array with a for loop and log each item.
+
+// let array=[22,33,44,5,7];
+// for(let i=0;i<array.length;i++){
+//     console.log(array[i])
+// }
+
+//12.Loop through the array with a while loop and log each item.
+
+// let array=[22,33,44,5,7];
+// let i=0;
+// while(i<array.length){
+//     console.log(array[i])
+//     i++
+// }
