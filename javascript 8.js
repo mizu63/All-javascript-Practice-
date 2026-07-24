@@ -364,11 +364,10 @@
 //     console.log(i)
 //  }
 
+//********************************Module-10-practice-tasks**************************************** */  
 
-                        // Module-10-practice-tasks
+//********************************Beginner**************************************** */  
 
-                        //  Beginner      
-              
 //1.1. Create an array with 3 items of your choice. Log it.
 // Expected: array with your 3 items printed
 
@@ -451,3 +450,171 @@
 //     console.log(array[i])
 //     i++
 // }
+
+//********************************Intermediate**************************************** */
+
+//1.Combine two arrays into one new array. Log the result.
+
+// let array1=[2,3,4,5,6];
+// let array2=[7,8,9,0];
+// let totalarray=array1.concat(array2);
+// console.log(totalarray)
+
+//2. Take a portion of an array (not the whole thing) without changing the original. Log the result.
+
+// let array=[22,33,44,5,7];
+// let result=array.slice(1,3);
+// console.log(result)
+
+//3. Turn an array of words into a single sentence string.
+// Expected: a string like "word word word"
+
+// let array=["word","word","word"]
+// let sentance=array.join(" ")
+// console.log(sentance)
+
+// 4. Check two variables (one array, one not) and log whether each is an array.
+// Expected: true then false, or false then true depending on order
+
+
+// let arr = [10, 20, 30];
+// let name = "Mizu";
+// console.log(Array.isArray(arr));
+// console.log(Array.isArray(name));
+
+//  ..................=>
+//****************************************************************************************** */
+// function sum1(a,b){
+//     const sum=a+b;
+//     return sum;
+// }
+//  const total1=sum1(5,6);
+
+// console.log("..............................")
+
+// function sum2(a,b){
+//     const sum=a+b;
+//     return sum;
+// }
+//  const total2=sum2(5,6);
+
+
+//  console.log("..............................")
+
+//  function add(a,b){
+//     const intotal=a+b;
+//     return intotal;
+// }
+//  const alltotal1=add(total1,total2);
+//  console.log(alltotal1)
+
+//****************************************************************************************** */
+
+//5.Reverse an array of at least 5 items. Log the result.
+
+// let array=[3,5,6,7,8,9];
+// array.reverse();
+// console.log(array)
+
+//6.Sort an array of names alphabetically. Log the result.
+
+// let array= ["Aahid", "Csif", "Nayeem", "Fahim", "Dakib"];
+// array.sort();
+// console.log(array)
+
+//7. Sort an array of numbers in ascending order, keeping numeric order correct (not string order).
+
+// let array = [7, 8, 5, 4, 9, 2, 0, 1, 3];
+// array.sort((a,b) => a-b);
+// console.log(array)
+
+//8. Given an array of numbers, log only the values greater than 10, using a loop.
+
+// let numbers=[2,44,55,66,8,9,7];
+// for(let i=0; i<numbers.length; i++){
+//     if(numbers[i]>10){
+//         console.log(numbers[i])
+//     }
+// }
+//**********************************/
+// let numbers = [2,44,55,66,8,9,7];
+// for(const num of numbers){
+//     if(num > 10){
+//         console.log(num);
+//     }
+// }
+//**********************************/
+
+// //9. Given an array of numbers, calculate and log the total sum, using a loop.
+
+// let numbers=[3,5,6,7,8,9,76,44,33,2];
+// let sum=0;
+// for(let i=0; i<numbers.length; i++){
+//     sum=sum+numbers[i];
+// }
+// console.log(sum)
+
+//********************************Advanced**************************************** */
+
+//1. Given an array of numbers, remove duplicates and log the unique values only.
+// const numbers = [5, 2, 8, 5, 3, 2, 8, 10, 3];
+// const uniqueNumbers = [];
+// for (const num of numbers) {
+//     if (!uniqueNumbers.includes(num)) {
+//         uniqueNumbers.push(num);
+//     }
+// }
+// console.log(uniqueNumbers);
+
+//2.Given an array of mixed values (numbers and strings), separate them into two arrays and log both.
+
+// let array=[3,4,5,6,7,"mizu","jim","amena",6,3,"mishu","mozaffor"];
+// let numbers=[];
+// let strings=[];
+// for(let i=0; i<array.length;i++){
+//     if(typeof array[i]==="number"){
+//         numbers.push(array[i]);
+//     }
+//     else if(typeof array[i]==="string"){
+//         strings.push(array[i]);
+//     }
+// }
+// console.log(numbers)
+// console.log(strings)
+
+//3.Given an array of numbers, find the largest and smallest value without using Math.max or Math.min directly on the whole array (use a loop).
+
+// let array=[2,3,4,9,6,7,8,9];
+// let max=array[0];
+// let min=array[0];
+// for(let i=0;i<array.length;i++){
+//     if(array[i]>max){
+//          max=array[i]
+// }
+// else if(array[i]<min){
+//     min=array[i]
+// }
+// }
+// console.log(max)
+// console.log(min)
+
+//4.Flatten a nested array (array containing arrays) into a single flat array.
+// Expected: [1,2,3,4,5,6] from something like [1,[2,3],[4,[5,6]]]
+
+// let array=[1, [2, 3], [4, [5, 6]]];
+// let final=array.flat(2)
+// let array1=array.flat();
+// let array2=array1.flat();
+// console.log(array1)
+// console.log(array2)
+// console.log(".........................................")
+// console.log(final)
+
+//5.Rotate an array left by one position (first item moves to the end). Log the result.
+// Expected: [2,3,4,5,1] from [1,2,3,4,5]
+// let array=[1,2,3,4,5,6,7,8,9];
+// let rotate=array.shift();
+// console.log(rotate)
+// let last=array.push(rotate)
+// console.log(last)
+// console.log(array)
