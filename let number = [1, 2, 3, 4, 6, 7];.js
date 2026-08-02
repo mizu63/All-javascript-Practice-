@@ -61,3 +61,19 @@ function sum2(a,b){
 }
  const alltotal1=add(total1,total2);
  console.log(alltotal1)
+
+
+
+
+ let str="I Love Bangladesh";
+let vawels="aeiou";
+let count=0;
+for(i=0;i<str.length;i++){
+   let letter=str[i];
+   console.log(i,letter)
+   if(vawels.includes(letter)){
+    console.log("vowels")
+    count++
+   }
+}
+console.log(count)

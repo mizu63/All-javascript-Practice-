@@ -618,3 +618,153 @@
 // let last=array.push(rotate)
 // console.log(last)
 // console.log(array)
+
+
+//  let str="I Love Bangladesh";
+// let vawels="aeiou";
+// let count=0;
+// for(i=0;i<str.length;i++){
+//    let letter=str[i];
+//    console.log(i,letter)
+//    if(vawels.includes(letter)){
+//     console.log("vowels")
+//     count++
+//    }
+// }
+// console.log("===>",count)
+
+
+
+//********************************Fundamentals of Strings & Objects**************************************** */
+
+//1.Spot the Difference
+// let str = "hello";
+// let arr = ["h", "e", "l", "l", "o"];
+
+// str=str.length;
+// arr=arr.length;
+// console.log(str,arr)
+
+// str=str[0];
+// arr=arr[0];
+// console.log(str,arr)
+// str.push("!");
+// console.log(str)
+
+//2. Convert Between Them 
+// let array="JavaScript";
+// let strArray=array.split("");
+// console.log(strArray)
+
+// let str= ["c", "a", "t"] ;
+// let srt1=str.join("");
+// console.log(srt1)
+
+//3. Case Conversion
+
+// let name =  "   hi there   ";
+// // let ubdate = name.toUpperCase();
+// // let smalltext=name.toLowerCase();
+// // console.log(smalltext)  
+//  let b=name.trim();
+//  console.log(b)
+
+//4. Slicing Strings
+
+// let sentence = "Learning JavaScript is fun!";
+
+// let final=sentence.slice(0,8);
+// // let final2=sentence.slice(-4)
+// console.log(final,final2)
+
+//5. Combine Strings
+
+//  let text1="Hello";
+//   let text2= "World";
+//    let final=text1.concat(" ",text2)
+//     let final2=text1 +" "+ text2;
+//     let final3=`${text1} ${text2}`
+//    console.log(final,final2,final3)
+
+
+
+
+//********************************Module 16 — ES6 Practice Tasks**************************************** */
+
+//1.Scope Detective
+// function describeDeclaration(keyword) {
+//     if (keyword === "var") {
+//         return "Can redeclare, can reassign";
+//     } else if (keyword === "let") {
+//         return "Cannot redeclare, can reassign";
+//     } else if (keyword === "const") {
+//         return "Cannot redeclare, cannot reassign";
+//     } else {
+//         return "Invalid";
+//     }
+// }
+
+// console.log(describeDeclaration("let"));
+// console.log(describeDeclaration("const"));
+// console.log(describeDeclaration("var"));
+// console.log(describeDeclaration("int"));
+
+//2.Movie Ticket Booking
+
+// function bookTicket(movie, seats = 1, pricePerSeat = 300) {
+//     if (
+//         typeof movie !== "string" ||
+//         typeof seats !== "number" ||
+//         typeof pricePerSeat !== "number" ||
+//         seats < 0 ||
+//         pricePerSeat < 0
+//     ) {
+//         return "Invalid";
+//     }
+//     const total = seats * pricePerSeat;
+//     return `${movie}: ${seats} seat(s), Total ৳${total}`;
+// }
+// console.log(bookTicket("Dune"));
+// // Dune: 1 seat(s), Total ৳300
+
+// console.log(bookTicket("Dune", 3));
+// // Dune: 3 seat(s), Total ৳900
+
+// console.log(bookTicket("Dune", 2, 450));
+// // Dune: 2 seat(s), Total ৳900
+
+// console.log(bookTicket(123, 2));
+// // Invalid
+
+//3.Receipt Generator
+
+// function generateReceipt (customerName,items ,total ){
+//   if (!Array.isArray(items) || items.length ===0){
+//          return "Invalid"
+//   }
+//   else{
+//       return `Receipt for ${customerName}
+// Items: ${items.join(", ")}
+// Total: ৳${total}`;
+
+//   }
+// }
+
+// console.log(generateReceipt("Rakib", ["Pen","Book"], 150))
+// console.log(generateReceipt("Sadia", ["Milk"], 60))
+// console.log(generateReceipt("Tanvir", [], 0))
+
+//4.
+
+//  const calculateBMI = (Weight ,Height ) => {
+//      if(Weight<=0 || Height <=0 ){
+//           return "Invalid"
+//      }
+//      else{
+//        let  BMI = Weight / (Height * Height);
+  
+//      return Number(BMI.toFixed(2))
+//      }
+    
+// }
+// console.log(calculateBMI(70, 1.75))
