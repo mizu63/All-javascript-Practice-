@@ -768,3 +768,165 @@
     
 // }
 // console.log(calculateBMI(70, 1.75))
+// console.log(calculateBMI(60, -1.7))
+
+//5.Inventory Merge & Max Score
+
+// function mergeInventory(arr1, arr2){
+//   if(!Array.isArray(arr1 )|| !Array.isArray(arr2)){
+//    return "Invalid"
+//   }
+//   else{
+//     let final=[...arr1,...arr2]
+//     return final
+//   }
+// }
+// console.log(mergeInventory([1,2],[3,4]))
+// console.log(mergeInventory([], [1,2]))
+// console.log(mergeInventory("abc", [1,2]))
+// console.log(mergeInventory([1,2], {}))
+
+
+// function highestScore (scores){
+//   if(!Array.isArray(scores)){
+//    return "Invalid"
+//   }
+//  let  highestScore = Math.max(...scores) 
+//  return highestScore
+// }
+
+// console.log(highestScore([3,7,2,9,4,88]))
+// console.log(highestScore(("3,7,2")))
+
+//6.User Profile Extractor
+
+// function extractUserInfo(userObj ){
+
+//        const {user, hobbies}=userObj
+//          const{name, age} = user
+//     const [firstHobby = "nothing yet"] =hobbies
+//     if( !user.name){
+//          return "Invalid"
+//     }
+ 
+//       return `${name} (${age}) likes ${firstHobby}`;
+// }
+
+// console.log(
+//   extractUserInfo({
+//     user: { name: "Sadia", age: 22 },
+//     hobbies: ["reading", "coding"]
+//   })
+// );
+
+// console.log(
+//   extractUserInfo({
+//     user: { name: "Rafi", age: 19 },
+//     hobbies: []
+//   })
+// );
+
+// console.log(
+//   extractUserInfo({
+//     user: { age: 30 },
+//     hobbies: []
+//   })
+// );
+
+//7.Inventory Object Manager
+
+// function manageInventoryObject(obj, action){
+//   if (typeof obj !== "object" || obj === null || Array.isArray(obj)) {
+//         return "Invalid";
+//     }
+
+//     // Keys
+//     if (action === "keys") {
+//         return Object.keys(obj);
+//     }
+
+//     // Values
+//     if (action === "values") {
+//         return Object.values(obj);
+//     }
+
+//     // Entries
+//     if (action === "entries") {
+//         return Object.entries(obj);
+//     }
+
+//     // Delete property
+//     if (action.includes("delete:")){
+//         let prop=action.slice(7)
+//            delete obj[prop];
+//          return obj;
+//     }
+
+//     // Seal object
+//     if (action === "seal") {
+//         return Object.seal(obj);
+//     }
+
+//     // Freeze object
+//     if (action === "freeze") {
+//         return Object.freeze(obj);
+//     }
+//     return "Invalid";
+// }
+
+
+
+
+
+
+
+// console.log(manageInventoryObject({a:1,b:2,c:3}, "keys"));
+// // ['a','b','c']
+
+// console.log(manageInventoryObject({a:1,b:2,c:3}, "values"));
+// // [1,2,3]
+
+// console.log(manageInventoryObject({a:1,b:2,c:3}, "entries"));
+// // [['a',1],['b',2],['c',3]]
+
+// console.log(manageInventoryObject({a:1,b:2,c:3}, "delete:c"));
+// // {a:1,b:2}
+
+// console.log(manageInventoryObject({a:1}, "shrink"));
+
+//8.Object Looper
+ 
+//  function printObjectDetails(obj, loopType){
+//      let result=[];
+//      if(loopType==="forin"){
+//         for(let key in obj){
+//             result.push(`${key}:${obj[key]}`)
+//         }
+//         return result
+//      }
+//      if(loopType==="forofentries"){
+//         for( let [key,value] of Object.entries(obj)){
+//             result.push(`${key}:${value}`)
+//         }
+//         return result
+//      }
+//      if(loopType==="entriesDestructure"){
+//       return Object.entries(obj).map(([key, value])=>{
+//         return `${key}: ${value}`;
+//         });
+        
+//      }
+//      return "Invalid"
+//  }
+
+// console.log(printObjectDetails({fruit:"Mango",price:50}, "forin"))
+
+//9.ES6 Refactor Challenge
+
+// var calculateTotal = function(items) { 
+//   const total=items.reduce((sum,item)=>sum + item.price,0)
+//   return `Total:${total} Taka`
+// };
+
+// console.log(calculateTotal([{price:100},{price:250}]))
+// console.log(calculateTotal([{price:80}]))
