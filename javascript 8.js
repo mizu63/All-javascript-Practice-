@@ -930,3 +930,57 @@
 
 // console.log(calculateTotal([{price:100},{price:250}]))
 // console.log(calculateTotal([{price:80}]))
+
+
+//** *****************************************************  MODIUL 17*************************************************************** */
+
+//1.CLOUSER
+
+// function resturented(){
+//     let sum=0;
+//     return function(a,b){
+//         sum=sum+a+b;
+//         return sum;
+//     }
+// }
+
+// let resturentedcashcounter=resturented();
+// let cofecashcountercashcounter=resturented();
+// console.log("Restaurant Total:", resturentedcashcounter(20,30))
+// console.log("Restaurant Total:", resturentedcashcounter(27,30))
+// console.log("Restaurant Total:", resturentedcashcounter(2,3))
+// console.log("Restaurant Total:", resturentedcashcounter(27,9930))
+
+// console.log("Cafe Total:",cofecashcountercashcounter(2,3))
+// console.log("Cafe Total:",cofecashcountercashcounter(27,9930))
+
+//2.CALLBACK FUNCITON
+
+// function callbackadd(a,b,cb){
+//     let sum=a+b;
+//    cb(sum)
+// }
+// function dis(result){
+//    console.log(result)
+// }
+// callbackadd(5,6,dis)
+
+//3.PASS BY VALUE
+
+// let name="mizu";
+// function myname(c){
+//    c="jim";
+//     console.log(c)
+// }
+// myname(name)
+// console.log(name)
+
+//4.PASS BT REFERRENCE
+
+let student={name:"mizu", roll:32}
+function myname(data){
+    data.name="jim"
+    console.log(data)
+}
+myname(student)
+console.log(student)
