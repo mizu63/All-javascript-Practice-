@@ -1317,41 +1317,53 @@
 //   Then print one final message using a template string:
 //     "Total: X items, Y Taka"
 
-//   Input:
-//     [
-//       { name: "Pen", price: 100, qty: 1 },
-//       { name: "Notebook", price: 100, qty: 2 }
-//     ]
+// //   Input:
+// //     [
+// //       { name: "Pen", price: 100, qty: 1 },
+// //       { name: "Notebook", price: 100, qty: 2 }
+// //     ]
 
-//   Output:
-//     "Total: 3 items, 300 Taka"
+// //   Output:
+// //     "Total: 3 items, 300 Taka"
 
-//   Bonus: if the cart is missing (null/undefined), don't crash —
-//   print "Total: 0 items, 0 Taka" instead.
-// */
+// //   Bonus: if the cart is missing (null/undefined), don't crash —
+// //   print "Total: 0 items, 0 Taka" instead.
+// // */
 
 // const cartCalculator = (products) => {
 //   let totalItems = 0;
 //   let totalPrice = 0;
 
-//   for (let product of products) {
-//     const { price, qty } = product;
+// for(const product of products){
+//   const  { price, qty }=product
+//   // let totalqty=totalItems+qty
+//   totalItems=totalItems + qty
+//  totalPrice= totalPrice + price * qty
+// }
+//  return `Total: ${totalItems || 0} items, ${totalPrice || 0} Taka`;
+// console.log(totalPrice)
+// console.log(totalItems)
 
-//     // totalItems = totalItems + product.qty
-//     totalItems += qty;
+//   // for (let product of products) {
+//   //   const { price, qty } = product;
 
-//     totalPrice = totalPrice + price * qty;
-//   }
+//   //   // totalItems = totalItems + product.qty
+//   //   totalItems += qty;
 
-//   console.log(totalItems, totalPrice);
+//   //   totalPrice = totalPrice + price * qty;
+//   // }
 
-//   return `Total: ${totalItems || 0} items, ${totalPrice || 0} Taka`;
+
+//   // console.log(totalItems, totalPrice);
+
+//   // return `Total: ${totalItems || 0} items, ${totalPrice || 0} Taka`;
 // };
 
 // const products = [
 //   { name: "Pen", price: 100, qty: 1 },
 //   { name: "Notebook", price: 100, qty: 2 },
 //   { name: "Headphone", price: 500, qty: 1 },
+  
 // ];
 
 // console.log(cartCalculator(products));
@@ -1364,3 +1376,79 @@
 //**************************************************************************************************************************************** */
 //******************************************************CLASS KORA DISA AI GULA  MODIUL 18************************************************ */
 //**************************************************************************************************************************************** */
+
+//***********************************Module 18 — Practice Tasks **************************************** */
+
+//Task 1: calculateBill(amount, taxRate = 0.05) — Default Parameters 
+// Return the final bill after tax is applied. Default tax rate is 5% when not provided.
+// Input:  
+// calculateBill(1000)
+// Output: 
+// 1050
+// Input:  
+// calculateBill(1000, 0.10)
+// Output: 
+// 1100
+
+// const calculateBill =(amount, taxRate = 0.05)=>{
+//       let tax=amount*taxRate
+//       return amount + tax;
+// }
+// console.log(calculateBill(1000))
+// console.log(calculateBill(1000, 0.10))
+
+//Task 2: buildProfileCard(user) — Template Literals 
+// Given { name, title, company }, return a multiline string using template literal interpolation only.
+
+// Input:  
+// { name: "Arif", title: "Developer", company: "Programming Hero" }
+// Output: 
+// "Arif\nDeveloper at Programming Hero"
+
+// const buildProfileCard =(user)=>{
+//   let  { name, title, company }=user
+//   return `${name}
+// ${title} at ${company}`;
+// }
+// console.log(buildProfileCard({ name: "Arif", title: "Developer", company: "Programming Hero" }))
+
+//Task 3: getLowestPrice(prices) — Spread Operator 
+// Given an array of numbers, return the lowest price using Math.min combined with spread (no manual loop).
+// Input:  
+// [340, 120, 560, 90]
+// Output: 
+// 90
+
+// const getLowestPrice =(prices)=>{
+//     let min=Math.min(...prices)
+//     return min
+// }
+
+// console.log(getLowestPrice([340, 120, 560, 90]))
+
+
+// //Task 4: swapValues(a, b) — Destructuring 
+// // Return [b, a] using array destructuring assignment, no temporary variable.
+// // Input:  
+// // swapValues(5, 10)
+// // Output:
+// //  [10, 5]
+//  const swapValues =(a, b)=>{
+//   [b,a]=[a,b]
+//   return[a,b]
+//  }
+
+//  console.log(swapValues(5, 10))
+
+// Task 5: getEmployeeDept(employee) — Nested Destructuring 
+// Given { name, job: { title, department } }, return { title, department } using nested destructuring.
+// Input:  
+// { name: "Nadia", job: { title: "PM", department: "Product" } }
+// Output: 
+// { title: "PM", department: "Product" }
+ const getEmployeeDept = (employee) =>{
+     let {name, job:{title,department}}=employee
+     return {title,department}
+ }
+
+ console.log(getEmployeeDept({ name: "Nadia", job: { title: "PM", department: "Product" } }))
