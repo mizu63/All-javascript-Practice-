@@ -1529,3 +1529,128 @@
 // console.log(cloneAndUpdate(array1, 1, 99))
 // console.log(array1)
 
+//*****************************************Module 19 — Practice Tasks******************************************* */
+
+//Task 1: getFormattedPrices(prices) — map() 
+// Given an array of numbers, return a new array where each price is formatted as a string prefixed with "$".
+// Input: [100, 250, 75] 
+// Output: ["$100", "$250", "$75"]
+
+// const getFormattedPrices = (prices)=>{
+//    let dolloradd=prices.map((elem)=>{
+//          return `$${elem}`
+//    })
+//    return dolloradd
+// }
+// console.log(getFormattedPrices([100, 250, 75] ))
+//******************//
+//Task 2: getAvailableProducts(products) — filter() 
+// Given an array of product objects { name, stock }, return only the products where stock is greater than 0.
+// Input: 
+// [{ name: "Pen", stock: 5 }, { name: "Bag", stock: 0 }, { name: "Notebook", stock: 2 }] 
+// Output: 
+// [{ name: "Pen", stock: 5 }, { name: "Notebook", stock: 2 }]
+
+
+// const getAvailableProducts = (products)=>{
+//   //  console.log(products)
+//    let filterproduct=products.filter((products)=> products.stock >0)
+//    return filterproduct
+// }
+
+
+// console.log(getAvailableProducts([{ name: "Pen", stock: 5 }, { name: "Bag", stock: 0 }, { name: "Notebook", stock: 2 }] ))
+
+//Task 3: findProductByName(products, name) — find() 
+// Given an array of product objects, return the first product matching the given name, or undefined if not found.
+// Input: 
+// products = [{ name: "Pen", price: 10 }, { name: "Bag", price: 500 }], name = "Bag" 
+// Output: 
+// { name: "Bag", price: 500 }
+
+// const findProductByName = (products, name)=>{
+//     //  console.log(products,name)
+//      let findoutproduct=products.find(product=>product.name==name)
+//      return findoutproduct
+// }
+// let products = [{ name: "Pen", price: 10 }, { name: "Bag", price: 500 }] ;
+// let name = "Bag" ;
+// console.log(findProductByName(products,name))
+//**************************************** */
+//Task 4: getTotalStockValue(products) — reduce() 
+// Given an array of products { price, stock }, return the total value of all stock combined (price × stock, summed).
+// Input:
+//  [{ price: 50, stock: 4 }, { price: 20, stock: 10 }] 
+// Output: 400
+
+// const  getTotalStockValue = (products)=>{
+//  let total=products.reduce((acamulator,current)=>{
+//   // console.log(current)
+//          let stockproduct= acamulator +(current.price * current.stock);
+//          return stockproduct
+//  },0)
+//  return total
+// }
+
+// console.log(getTotalStockValue([{ price: 50, stock: 4 }, { price: 20, stock: 10 }] ))
+
+//Task 5: getDiscountedTotalForCategory(products, category) — Chaining map + filter + reduce 
+// Given an array of products { name, category, price }, return the total price of all products in the given category after applying a 10% discount to each.
+// Input: 
+// products = [{ name: "Pen", category: "stationery", price: 100 }, { name: "Bag", category: "accessory", price: 500 }, { name: "Notebook", category: "stationery", price: 60 }], category = "stationery" 
+// Output: 144
+
+// const getDiscountedTotalForCategory = (products, category)=>{
+//     // console.log(products,category)
+//     let filterpproduct=products.filter((product)=>{
+//        return product.category==category
+//     })
+//     let productdiscount=filterpproduct.map((elem)=>{
+//       return elem.price-((elem.price*10)/100)
+//       // {
+//       //   ...elem,
+//       // price: elem.price-((elem.price*10)/100)//optional
+//       // }
+//     })
+//     // console.log(productdiscount)//optional
+//     let total=productdiscount.reduce((acumolator,current)=>{
+//       // console.log(current)
+//        return acumolator +current
+//     },0)
+//     return total
+//     // {
+//     //   total,productdiscount //optional
+//     // }
+//     // [total,productdiscount]//optional
+// }
+
+// let products = [{ name: "Pen", category: "stationery", price: 100 }, { name: "Bag", category: "accessory", price: 500 }, { name: "Notebook", category: "stationery", price: 60 }];
+// let category = "stationery" 
+
+// console.log(getDiscountedTotalForCategory(products,category))
+
+//Task 6: createIdGenerator() — Closures 
+// Return a function that generates a new sequential ID starting from 1 each time it is called, using an internal counter with no global variable.
+// Input: 
+// const nextId = createIdGenerator(); 
+// nextId(); 
+// nextId(); 
+// nextId();
+
+//  Output: 1, 2, 3
+
+// const createIdGenerator = ()=>{
+//   let count=0;
+//   return (()=>{
+//      count ++
+//      return count
+//   })
+// }
+// const nextId = createIdGenerator();
+// console.log(nextId())
+// console.log(nextId())
+// console.log(nextId())
+// console.log(nextId())
+// console.log(nextId())
+
+//
