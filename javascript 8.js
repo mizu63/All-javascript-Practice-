@@ -1774,3 +1774,27 @@
 // ];
 
 // console.log(getTopSellingProduct(orders)); // Output: "Pen"
+
+
+//************************************************
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+//  function getTopSellingProduct(orders) {
+//   let total=orders.reduce((acc,orders)=>{
+//     let {product,unitsSold}=orders
+//   acc[product]=(acc[product] ||0) + unitsSold
+//       return acc;
+//   },{})
+//   return total
+//  }
+
+
+// const orders = [
+//    { product: "Pen", unitsSold: 30 },
+//  { product: "Bag", unitsSold: 120 },
+//  { product: "Pen", unitsSold: 25 }
+//  ]
+//  console.log(getTopSellingProduct(orders));
+
+//************************************************
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
