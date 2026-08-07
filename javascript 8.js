@@ -1024,8 +1024,17 @@
 
 // console.log(receiptGenerator("Pen", 20, 3));
 // console.log(receiptGenerator("Eraser", 15, 2));
+
+
+
+
+
 //***************************************************************************************************************** */
 /*
+
+
+
+
   Problem 1: Flexible Total Calculator
   calculateTotal(...prices) using rest params, sums any number of
   prices.
@@ -1035,6 +1044,9 @@
 */
 
 // Simple rule: discount is ALWAYS the first argument.
+
+
+
 
 // function calculateTotal(discount, ...prices) {
 //   console.log(discount, prices);
@@ -1055,6 +1067,8 @@
 // // console.log(calculateTotal(10, 100, 200, 50, 300));
 
 // /*
+
+
 //   Problem 2: Merge & Deduplicate Arrays
 //   Merge two arrays and remove duplicates using spread + Set.
 
@@ -1653,4 +1667,110 @@
 // console.log(nextId())
 // console.log(nextId())
 
-//
+//Task 7: sortByPriceAscending(products) — Callback Function 
+// Given an array of product objects { name, price }, return a new array sorted from lowest to highest price using a comparator callback in sort().
+// Input: 
+// [{ name: "Bag", price: 500 }, { name: "Pen", price: 10 }, { name: "Notebook", price: 60 }] 
+// Output:
+//  [{ name: "Pen", price: 10 }, { name: "Notebook", price: 60 }, { name: "Bag", price: 500 }]
+
+// function mainFunction(a, b) {
+//   return a.price - b.price;
+// }
+
+// function myCallback(product) {
+//   return product.sort(mainFunction);
+// }
+
+// let product = [
+//   { name: "Bag", price: 500 },
+//   { name: "Pen", price: 10 },
+//   { name: "Notebook", price: 60 }
+// ];
+
+// console.log(myCallback(product));
+
+//Task 8: applyBonusPoints(users, bonus) — Pass by Reference vs Value 
+// Return a NEW array of users with points increased by bonus, without mutating the original array or its objects.
+//Input: users = [{ name: "Rafi", points: 20 }], bonus = 5 
+// Output: [{ name: "Rafi", points: 25 }]
+//  (original array's object must still have points: 20)
+
+// const applyBonusPoints = (users, bonus)=>{
+//        let newarry={
+//              ...users[0],
+//              points: users[0].points + bonus
+//        }
+       
+//         return newarry
+    
+// }
+// let users= [{ name: "Rafi", points: 20 }];
+// let bonus = 5;
+// console.log(applyBonusPoints(users,bonus))
+  //or//
+//  const applyBonusPoints = (users, bonus) => {
+//   return users.map((user) => {
+//     return {
+//       ...user,
+//       points: user.points + bonus
+//     };
+//   });
+// };
+
+//Task 9: isStrictMatch(input, target) — Truthy/Falsy and === 
+// Return true only if input strictly equals target in both value and type, false otherwise.
+// Input: isStrictMatch("18", 18) 
+// Output: false
+// Input: isStrictMatch(18, 18) 
+// Output: true
+
+// const isStrictMatch = (input, target)=>{
+//   if(input===target){
+//     return true
+//   }
+//   return false
+// }
+// console.log(isStrictMatch("18", 18))
+// console.log(isStrictMatch(18, 18))
+
+
+//Task 10: getTopSellingProduct(orders) — Mixed (map + reduce, capstone-style) 
+// Given an array of orders { product, unitsSold }, 
+// return the name of the product with the highest total units sold across all orders (a product may appear in multiple orders).
+
+// Input: [{ product: "Pen", unitsSold: 30 }, { product: "Bag", unitsSold: 12 }, { product: "Pen", unitsSold: 25 }] 
+// Output: "Pen"
+
+
+
+// function getTopSellingProduct(orders) {
+
+//   const totalSales = orders.reduce((acc, order) => {
+//     const { product, unitsSold } = order;
+//     acc[product] = (acc[product] || 0) + unitsSold;
+//     return acc;
+//   }, {});
+
+
+//   let topProduct = "";
+//   let maxUnits = 0;
+
+//   for (const product in totalSales) {
+//     if (totalSales[product] > maxUnits) {
+//       maxUnits = totalSales[product];
+//       topProduct = product;
+//     }
+//   }
+
+//   return topProduct;
+// }
+
+// // পরীক্ষা:
+// const orders = [
+//   { product: "Pen", unitsSold: 30 },
+//   { product: "Bag", unitsSold: 12 },
+//   { product: "Pen", unitsSold: 25 }
+// ];
+
+// console.log(getTopSellingProduct(orders)); // Output: "Pen"
