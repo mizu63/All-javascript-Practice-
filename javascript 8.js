@@ -447,6 +447,9 @@
 
 // let array=[1,2,3];
 // console.log(array)
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
 
 //2.2. Log the length of the array from Task 1.
 // Expected: 3
@@ -455,46 +458,53 @@
 // let a=array.length;
 // console.log(a)
 
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //3.. Log the item at index 0 and index 2 of the array.
 
 // let array=[4,9,7,5,3,1,6];
 // console.log(array[0])
 // console.log(array[2])
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //4. Change the item at index 1 to a new value. Log the array.
 
 // let array=[2,3,4,5,6,7,8];
 // array[1]=20;
 // console.log(array)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //5. Add one item to the end of the array. Log the array.
 
 // let array=[2,4,6,7];
 // array.push(23)
 // console.log(array)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //6. Remove the last item from the array. Log the array and the removed value.
 
 // let array=[23,43,656,78,90];
 // let removed=array.pop();
 // console.log(removed)
 // console.log(array)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //7. Add one item to the start of the array. Log the array.
 
 // let array=[22,33,44,5,7];
 // let add=array.unshift(222)
 // console.log(array)
 // console.log(add)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //8. Remove the first item from the array. Log the array and the removed value.
 
 // let array=[22,33,44,5,7];
 // let removed=array.shift(222)
 // console.log(array)
 // console.log(removed)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //9. Check whether the array contains a specific value. Log true or false.
 
 // let array=[22,333,44,55,66];
@@ -503,19 +513,22 @@
 // }else{
 //     console.log("false")
 // }
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //10. Find the position of a specific value in the array. Log the number.
 // let array=[22,33,44,5,7];
 // let indexnumber=array.indexOf(33);
 // console.log(indexnumber)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //11. Loop through the array with a for loop and log each item.
 
 // let array=[22,33,44,5,7];
 // for(let i=0;i<array.length;i++){
 //     console.log(array[i])
 // }
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //12.Loop through the array with a while loop and log each item.
 
 // let array=[22,33,44,5,7];
@@ -533,20 +546,23 @@
 // let array2=[7,8,9,0];
 // let totalarray=array1.concat(array2);
 // console.log(totalarray)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //2. Take a portion of an array (not the whole thing) without changing the original. Log the result.
 
 // let array=[22,33,44,5,7];
 // let result=array.slice(1,3);
 // console.log(result)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //3. Turn an array of words into a single sentence string.
 // Expected: a string like "word word word"
 
 // let array=["word","word","word"]
 // let sentance=array.join(" ")
 // console.log(sentance)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // 4. Check two variables (one array, one not) and log whether each is an array.
 // Expected: true then false, or false then true depending on order
 
@@ -589,19 +605,22 @@
 // let array=[3,5,6,7,8,9];
 // array.reverse();
 // console.log(array)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //6.Sort an array of names alphabetically. Log the result.
 
 // let array= ["Aahid", "Csif", "Nayeem", "Fahim", "Dakib"];
 // array.sort();
 // console.log(array)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //7. Sort an array of numbers in ascending order, keeping numeric order correct (not string order).
 
 // let array = [7, 8, 5, 4, 9, 2, 0, 1, 3];
 // array.sort((a,b) => a-b);
 // console.log(array)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //8. Given an array of numbers, log only the values greater than 10, using a loop.
 
 // let numbers=[2,44,55,66,8,9,7];
@@ -618,7 +637,8 @@
 //     }
 // }
 //**********************************/
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // //9. Given an array of numbers, calculate and log the total sum, using a loop.
 
 // let numbers=[3,5,6,7,8,9,76,44,33,2];
@@ -639,6 +659,8 @@
 //     }
 // }
 // console.log(uniqueNumbers);
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 //2.Given an array of mixed values (numbers and strings), separate them into two arrays and log both.
 
@@ -655,7 +677,8 @@
 // }
 // console.log(numbers)
 // console.log(strings)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //3.Given an array of numbers, find the largest and smallest value without using Math.max or Math.min directly on the whole array (use a loop).
 
 // let array=[2,3,4,9,6,7,8,9];
@@ -671,7 +694,8 @@
 // }
 // console.log(max)
 // console.log(min)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //4.Flatten a nested array (array containing arrays) into a single flat array.
 // Expected: [1,2,3,4,5,6] from something like [1,[2,3],[4,[5,6]]]
 
@@ -683,7 +707,8 @@
 // console.log(array2)
 // console.log(".........................................")
 // console.log(final)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //5.Rotate an array left by one position (first item moves to the end). Log the result.
 // Expected: [2,3,4,5,1] from [1,2,3,4,5]
 // let array=[1,2,3,4,5,6,7,8,9];
@@ -724,7 +749,8 @@
 // console.log(str,arr)
 // str.push("!");
 // console.log(str)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //2. Convert Between Them 
 // let array="JavaScript";
 // let strArray=array.split("");
@@ -733,7 +759,8 @@
 // let str= ["c", "a", "t"] ;
 // let srt1=str.join("");
 // console.log(srt1)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //3. Case Conversion
 
 // let name =  "   hi there   ";
@@ -742,7 +769,8 @@
 // // console.log(smalltext)  
 //  let b=name.trim();
 //  console.log(b)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //4. Slicing Strings
 
 // let sentence = "Learning JavaScript is fun!";
@@ -750,7 +778,8 @@
 // let final=sentence.slice(0,8);
 // // let final2=sentence.slice(-4)
 // console.log(final,final2)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //5. Combine Strings
 
 //  let text1="Hello";
@@ -782,7 +811,8 @@
 // console.log(describeDeclaration("const"));
 // console.log(describeDeclaration("var"));
 // console.log(describeDeclaration("int"));
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //2.Movie Ticket Booking
 
 // function bookTicket(movie, seats = 1, pricePerSeat = 300) {
@@ -809,7 +839,8 @@
 
 // console.log(bookTicket(123, 2));
 // // Invalid
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //3.Receipt Generator
 
 // function generateReceipt (customerName,items ,total ){
@@ -827,7 +858,8 @@
 // console.log(generateReceipt("Rakib", ["Pen","Book"], 150))
 // console.log(generateReceipt("Sadia", ["Milk"], 60))
 // console.log(generateReceipt("Tanvir", [], 0))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //4.
 
 //  const calculateBMI = (Weight ,Height ) => {
@@ -843,7 +875,8 @@
 // }
 // console.log(calculateBMI(70, 1.75))
 // console.log(calculateBMI(60, -1.7))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //5.Inventory Merge & Max Score
 
 // function mergeInventory(arr1, arr2){
@@ -871,7 +904,8 @@
 
 // console.log(highestScore([3,7,2,9,4,88]))
 // console.log(highestScore(("3,7,2")))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //6.User Profile Extractor
 
 // function extractUserInfo(userObj ){
@@ -906,7 +940,8 @@
 //     hobbies: []
 //   })
 // );
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //7.Inventory Object Manager
 
 // function manageInventoryObject(obj, action){
@@ -967,7 +1002,8 @@
 // // {a:1,b:2}
 
 // console.log(manageInventoryObject({a:1}, "shrink"));
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //8.Object Looper
  
 //  function printObjectDetails(obj, loopType){
@@ -994,7 +1030,8 @@
 //  }
 
 // console.log(printObjectDetails({fruit:"Mango",price:50}, "forin"))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //9.ES6 Refactor Challenge
 
 // var calculateTotal = function(items) { 
@@ -1027,7 +1064,8 @@
 
 // console.log("Cafe Total:",cofecashcountercashcounter(2,3))
 // console.log("Cafe Total:",cofecashcountercashcounter(27,9930))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //2.CALLBACK FUNCITON
 
 // function callbackadd(a,b,cb){
@@ -1038,7 +1076,8 @@
 //    console.log(result)
 // }
 // callbackadd(5,6,dis)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //3.PASS BY VALUE
 
 // let name="mizu";
@@ -1048,7 +1087,8 @@
 // }
 // myname(name)
 // console.log(name)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //4.PASS BT REFERRENCE
 
 // let student={name:"mizu", roll:32}
@@ -1142,7 +1182,8 @@
 
 // /*
 
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //   Problem 2: Merge & Deduplicate Arrays
 //   Merge two arrays and remove duplicates using spread + Set.
 
@@ -1325,7 +1366,8 @@
 // console.log(getCity(user2));
 
 // //***************************************************************************** */
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // /*
 //   Problem 1: Add Grade to Each Student (Without Changing Original)
   
@@ -1390,7 +1432,8 @@
 
 
 
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 
 
@@ -1484,7 +1527,8 @@
 // }
 // console.log(calculateBill(1000))
 // console.log(calculateBill(1000, 0.10))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 2: buildProfileCard(user) — Template Literals 
 // Given { name, title, company }, return a multiline string using template literal interpolation only.
 
@@ -1499,7 +1543,8 @@
 // ${title} at ${company}`;
 // }
 // console.log(buildProfileCard({ name: "Arif", title: "Developer", company: "Programming Hero" }))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 3: getLowestPrice(prices) — Spread Operator 
 // Given an array of numbers, return the lowest price using Math.min combined with spread (no manual loop).
 // Input:  
@@ -1514,7 +1559,8 @@
 
 // console.log(getLowestPrice([340, 120, 560, 90]))
 
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // //Task 4: swapValues(a, b) — Destructuring 
 // // Return [b, a] using array destructuring assignment, no temporary variable.
 // // Input:  
@@ -1527,7 +1573,8 @@
 //  }
 
 //  console.log(swapValues(5, 10))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // Task 5: getEmployeeDept(employee) — Nested Destructuring 
 // Given { name, job: { title, department } }, return { title, department } using nested destructuring.
 // Input:  
@@ -1540,7 +1587,8 @@
 //  }
 
 //  console.log(getEmployeeDept({ name: "Nadia", job: { title: "PM", department: "Product" } }))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // //Task 6: promoteEmployee(employee, newTitle) — Spread + Immutable Update 
 // Return a NEW employee object with title updated to newTitle. Original object must remain unchanged.
 // Input:  
@@ -1556,7 +1604,8 @@
 //  console.log(promoteEmployee( employee,"Senior Dev"))
 
 // console.log(employee)
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // //Task 7: sumAllPrices(prices) — for...of 
 // // Given an array of numbers, return their sum using for...of.
 // // Input:  [100, 250, 75]
@@ -1570,7 +1619,8 @@
 //   return sum
 // }
 // console.log(sumAllPrices([100, 250, 75]))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // //Task 8: getManagerName(employee) — Optional Chaining 
 // Given an employee object that may or may not have a manager property, return the manager's name safely, or undefined if missing.
 // Input:  { name: "Mim", manager: { name: "Tanvir" } }
@@ -1587,7 +1637,8 @@
 
 // console.log(getManagerName({ name: "Mim", manager: { name: "Tanvir" } }))
 // console.log(getManagerName( { name: "Rafi" }))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 9: splitFirstRest(arr) — Rest Syntax 
 // Return { first, rest } where first is the first element and rest is an array of all remaining elements.
 // Input:  [10, 20, 30, 40]
@@ -1600,7 +1651,8 @@
 // }
 
 // console.log(splitFirstRest([10, 20, 30, 40]))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // // //Task 10:  cloneAndUpdate(arr, index, newValue) — Spread (Immutable Array 
 // // Update) Return a new array with the value at index replaced by newValue, without mutating the original array.
 // // Input:  cloneAndUpdate([5, 10, 15], 1, 99)
@@ -1632,6 +1684,8 @@
 // }
 // console.log(getFormattedPrices([100, 250, 75] ))
 //******************//
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 2: getAvailableProducts(products) — filter() 
 // Given an array of product objects { name, stock }, return only the products where stock is greater than 0.
 // Input: 
@@ -1648,7 +1702,8 @@
 
 
 // console.log(getAvailableProducts([{ name: "Pen", stock: 5 }, { name: "Bag", stock: 0 }, { name: "Notebook", stock: 2 }] ))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 3: findProductByName(products, name) — find() 
 // Given an array of product objects, return the first product matching the given name, or undefined if not found.
 // Input: 
@@ -1665,6 +1720,8 @@
 // let name = "Bag" ;
 // console.log(findProductByName(products,name))
 //**************************************** */
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 4: getTotalStockValue(products) — reduce() 
 // Given an array of products { price, stock }, return the total value of all stock combined (price × stock, summed).
 // Input:
@@ -1681,7 +1738,8 @@
 // }
 
 // console.log(getTotalStockValue([{ price: 50, stock: 4 }, { price: 20, stock: 10 }] ))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 5: getDiscountedTotalForCategory(products, category) — Chaining map + filter + reduce 
 // Given an array of products { name, category, price }, return the total price of all products in the given category after applying a 10% discount to each.
 // Input: 
@@ -1716,7 +1774,8 @@
 // let category = "stationery" 
 
 // console.log(getDiscountedTotalForCategory(products,category))
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 6: createIdGenerator() — Closures 
 // Return a function that generates a new sequential ID starting from 1 each time it is called, using an internal counter with no global variable.
 // Input: 
@@ -1740,7 +1799,8 @@
 // console.log(nextId())
 // console.log(nextId())
 // console.log(nextId())
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 7: sortByPriceAscending(products) — Callback Function 
 // Given an array of product objects { name, price }, return a new array sorted from lowest to highest price using a comparator callback in sort().
 // Input: 
@@ -1763,7 +1823,8 @@
 // ];
 
 // console.log(myCallback(product));
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 8: applyBonusPoints(users, bonus) — Pass by Reference vs Value 
 // Return a NEW array of users with points increased by bonus, without mutating the original array or its objects.
 //Input: users = [{ name: "Rafi", points: 20 }], bonus = 5 
@@ -1791,7 +1852,8 @@
 //     };
 //   });
 // };
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 9: isStrictMatch(input, target) — Truthy/Falsy and === 
 // Return true only if input strictly equals target in both value and type, false otherwise.
 // Input: isStrictMatch("18", 18) 
@@ -1808,7 +1870,8 @@
 // console.log(isStrictMatch("18", 18))
 // console.log(isStrictMatch(18, 18))
 
-
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Task 10: getTopSellingProduct(orders) — Mixed (map + reduce, capstone-style) 
 // Given an array of orders { product, unitsSold }, 
 // return the name of the product with the highest total units sold across all orders (a product may appear in multiple orders).
