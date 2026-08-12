@@ -1669,6 +1669,373 @@
 // console.log(cloneAndUpdate(array1, 1, 99))
 // console.log(array1)
 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// /*
+//   Problem 1: Fix the Scope Bug
+//   Rewrite using let to fix the output.
+// */
+
+// let status = "Order Placed";
+
+// for (var i = 1; i <= 3; i++) {
+//   let status = "Processing Item " + i;
+//   // console.log(status);
+// }
+
+// // console.log("Final Status:", status);
+
+// /*
+//   Problem 2: Receipt Generator (Template Strings)
+//   Build a receipt generator using template strings — take item name,
+//   price, qty as input, output formatted multiline receipt.
+
+//   Example: Input ("Pen", 20, 3) -> Output "Pen x3 = 60 Taka"
+// */
+
+// function receiptGenerator(name, price, qty) {
+//   // console.log(name, price, qty);
+
+//   // return name + " x" + qty + " = " + price * qty + " Taka";
+//   return `${name} x${qty} = ${price * qty} Taka`
+// }
+
+// console.log(receiptGenerator("Pen", 20, 3));
+// console.log(receiptGenerator("Eraser", 15, 2));
+
+//@@@@@@@@@@@@@@@@@@@@@@@@
+// /*
+//   Problem 1: Flexible Total Calculator
+//   calculateTotal(...prices) using rest params, sums any number of
+//   prices.
+
+//   Example: calculateTotal(0, 100, 200, 300) -> 600
+//   Example: calculateTotal(10, 100, 200) -> 270   (10 = discount%)
+// */
+
+// // Simple rule: discount is ALWAYS the first argument.
+
+// function calculateTotal(discount, ...prices) {
+//   console.log(discount, prices);
+//   // let total  = 0;
+//   // for(let i = 0; i<prices.length; i++){
+//   //   total+= prices[i]
+//   // }
+//   let total = prices.reduce(
+//     (accumulator, currentValue) => accumulator + currentValue,
+//     0,
+//   );
+//   let discountAmount = (total * discount) / 100;
+//   console.log(discountAmount);
+//   let totalAfterDiscountApply = total - discountAmount;
+//   return totalAfterDiscountApply;
+// }
+
+// // console.log(calculateTotal(10, 100, 200, 50, 300));
+
+// /*
+//   Problem 2: Merge & Deduplicate Arrays
+//   Merge two arrays and remove duplicates using spread + Set.
+
+//   Example: [1,2,3] + [2,3,4] -> [1,2,3,4]
+// */
+
+// let arr1 = [10, 20, 30, 40, 50];
+// let arr2 = [50, 60, 20, 90];
+
+// let mergedArr = [...arr1, ...arr2];
+// console.log(mergedArr);
+
+// // let newArr = [...new Set(mergedArr)];
+// let newArr = Array.from(new Set(mergedArr));
+
+// console.log(newArr);
+
+//<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/*
+  Problem 1: Arrow Function with Default Parameters & Logic
+  Write an arrow function that calculates shipping cost based on
+  order amount. Free shipping if amount >= 1000, otherwise charge
+  a default fee 60 taka.
+
+  Example: calculateShipping(1200) -> "Free Shipping"
+  Example: calculateShipping(500) -> "Shipping Fee: 60 Taka"
+  Example: calculateShipping(500, 100) -> "Shipping Fee: 100 Taka"
+*/
+
+// const calculateShipping = (orderAmount, shippingFee = 60) => {
+// //   // if(orderAmount>=1000){
+// //   //   return "Free Shipping"
+// //   // } else{
+// //   //   return `Shipping Fee: ${shippingFee} Taka`
+// //   // }
+
+// //   // condition ? true : false
+// //   return orderAmount >= 1000
+// //     ? "Free Shipping"
+// //     : `Shipping Fee: ${shippingFee} Taka`;
+// // };
+// // // console.log(calculateShipping(1200));
+// // // console.log(calculateShipping(500));
+// // // console.log(calculateShipping(500, 100));
+
+// // /*
+// //   Problem 2: Arrow Function with Multiple Conditions
+// //   Write an arrow function that assigns a grade based on marks.
+// //   90+ -> "A+", 80-89 -> "A", 60-79 -> "B", below 60 -> "Fail"
+// //   Rules: if not number -> return invalid
+
+// //   Example: getGrade(95) -> "A+"
+// //   Example: getGrade(82) -> "A"
+// //   Example: getGrade(45) -> "Fail"
+// // */
+
+// // const getGrade = (mark) => {
+// //   // if (typeof mark != "number") {
+// //   //   return "Invalid";
+// //   // }
+
+// //   // if (mark >= 90) {
+// //   //   return "A+";
+// //   // } else if (mark >= 80) {
+// //   //   return "A";
+// //   // } else if (mark >= 60) {
+// //   //   return "B+";
+// //   // } else {
+// //   //   return "Fail";
+// //   // }
+
+// //   // Ternary operator -> condition ? true : false
+// // // Nested operator
+// //   return typeof mark!= "number" ? "Invalid" : mark >= 90 ? "A+" : mark>=80 ? "A" : mark>= 60 ? "B+" : "Fail"
+// // };
+// // console.log(getGrade(95));
+// // console.log(getGrade(82));
+// // console.log(getGrade(45));
+// // console.log(getGrade("Utsho"));
+// // console.log(getGrade([]));
+// //........................................................................
+
+// /*
+//   Problem 1: Nested Response Extractor
+//   Extract specific fields from a nested API-like response object using
+//   destructuring, with renaming + default value.
+
+//   Example: { user: { name: "Rafi", age: 22 } } -> extract name as
+//   userName, default age = 18 if missing
+// */
+
+// // // const responseExtractor = (obj) => {
+// // //   const {
+// // //     user: { name: userName, age = 18 },
+// // //   } = obj;
+// // //   // console.log(userName, age);
+// // //   return {
+// // //     userName,
+// // //     age,
+// // //   };
+// // // };
+// // // console.log(responseExtractor({ user: { name: "Rafi", age: 22 } }));
+// // // console.log(responseExtractor({ user: { name: "Rafi", age: 25 } }));
+// // // console.log(responseExtractor({ user: { name: "Nishat" } }));
+
+// // // /*
+// // //   Problem 2: Swap & Rest Extractor
+// // //   Swap two variables and extract first/rest elements from an array
+// // //   using destructuring, no temp variable.
+
+// // //   Example: [a, b] = [b, a]
+// // //   Example: [first, ...rest] = [10,20,30,40] -> first=10, rest=[20,30,40]
+// // // */
+
+// // // let a = 5;
+// // // let b = 10;
+// // // [b, a] = [a, b];
+
+// // // // console.log(a, b);
+
+// // // let nums = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+// // // let [first, second, ...rest ] = nums
+// // // console.log(first, second, rest);
+
+// // //..........................<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// // /*
+// //   Problem 1: Most Expensive Product
+// //   Given an object of product prices, use Object.keys() or Object.entries() + loop to
+// //   find the most expensive product.
+
+// //   Example: { pen: 20, book: 150, bag: 500 } -> "bag"
+// // */
+
+// // const getMostExpensiveProduct = (product) => {
+// //   const keys = Object.keys(product);
+// //   let highest = 0;
+// //   let expensiveProductName = "";
+
+// //   // console.log(keys);
+// //   for (let key of keys) {
+// //     if (highest < product[key]) {
+// //       highest = product[key];
+// //       expensiveProductName = key;
+// //     }
+// //     // console.log(key, product[key]);
+// //   }
+
+// //   // console.log(highest, expensiveProductName);
+// //   return expensiveProductName;
+// // };
+
+// // // console.log(getMostExpensiveProduct({ pen: 20, book: 150, bag: 500, bat: 750, laptop: 30000, desktop: 70000 }));
+
+// // /*
+// //   Problem 2: Safe Nested Access
+// //   Safely access deeply nested optional data using ?. and ?? without
+// //   throwing errors.
+
+// //   Example: user?.address?.city ?? "City not found" when address is undefined
+// // */
+
+// // let user1 = {
+// //   name: "Akash",
+// //   address: {
+// //     city: "Comilla",
+// //   },
+// // };
+// // let user2 = {
+// //   name: "Robin",
+// //   // address: {},
+// // };
+
+// // const getCity = (user) => {
+// //   return user.address?.city;
+// // };
+
+// // console.log(getCity(user1));
+// // console.log(getCity(user2));
+
+// //<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//  /*
+//   Problem 1: Add Grade to Each Student (Without Changing Original)
+  
+//   You have an array of student objects, each with name and marks.
+//   Create a NEW array where every student also has a "grade" field,
+//   based on their marks. The ORIGINAL array must stay exactly the same.
+
+//   Grading rule:
+//     marks >= 90 -> "A+"
+//     marks >= 80 -> "A"
+//     marks >= 60 -> "B"
+//     below 60    -> "Fail"
+
+//   Input:
+//     [
+//       { name: "Rafi", marks: 85 },
+//       { name: "Karim", marks: 45 }
+//     ]
+
+//   Output (new array):
+//     [
+//       { name: "Rafi", marks: 85, grade: "A" },
+//       { name: "Karim", marks: 45, grade: "Fail" }
+//     ]
+
+//   Original array must remain untouched (no "grade" field added to it).
+// */
+
+// const addGrade = (students) => {
+//   const getGrade = (marks) => {
+//     if (marks >= 90) {
+//       return "A+";
+//     } else if (marks >= 80) {
+//       return "A";
+//     } else if (marks >= 60) {
+//       return "B";
+//     } else {
+//       return "Fail";
+//     }
+//   };
+
+//   const modifiedStudents = students.map((student) => {
+//     const { name, marks } = student;
+
+//     const newStudentWithGrade = { name, marks, grade: getGrade(marks) };
+
+//     return newStudentWithGrade;
+//   });
+
+//   return modifiedStudents;
+// };
+
+// let students = [
+//   { name: "Rafi", marks: 85 },
+//   { name: "Karim", marks: 45 },
+//   { name: "Utsho", marks: 95 },
+//   { name: "Akash", marks: 65 },
+// ];
+
+// // console.log(addGrade(students));
+// // console.log(students);
+
+
+
+
+
+
+
+// /*
+//   Problem 2: Cart Total Calculator
+  
+//   You have an array of cart items, each with a name, price, and qty
+//   (quantity). Calculate:
+//     1. Total number of items in the cart (sum of all qty)
+//     2. Total cost (sum of price x qty for each item)
+
+//   Then print one final message using a template string:
+//     "Total: X items, Y Taka"
+
+//   Input:
+//     [
+//       { name: "Pen", price: 100, qty: 1 },
+//       { name: "Notebook", price: 100, qty: 2 }
+//     ]
+
+//   Output:
+//     "Total: 3 items, 300 Taka"
+
+//   Bonus: if the cart is missing (null/undefined), don't crash —
+//   print "Total: 0 items, 0 Taka" instead.
+// */
+
+// const cartCalculator = (products) => {
+//   let totalItems = 0;
+//   let totalPrice = 0;
+
+//   for (let product of products) {
+//     const { price, qty } = product;
+
+//     // totalItems = totalItems + product.qty
+//     totalItems += qty;
+
+//     totalPrice = totalPrice + price * qty;
+//   }
+
+//   console.log(totalItems, totalPrice);
+
+//   return `Total: ${totalItems || 0} items, ${totalPrice || 0} Taka`;
+// };
+
+// const products = [
+//   { name: "Pen", price: 100, qty: 1 },
+//   { name: "Notebook", price: 100, qty: 2 },
+//   { name: "Headphone", price: 500, qty: 1 },
+// ];
+
+// console.log(cartCalculator(products));
+// console.log(cartCalculator([]));
+
+
+
+
 //*****************************************Module 19 — Practice Tasks******************************************* */
 
 //Task 1: getFormattedPrices(prices) — map() 
